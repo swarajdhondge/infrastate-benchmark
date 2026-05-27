@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+title: "InfraState Benchmark — Evaluation Harness"
+message: "If you use this harness, please cite the accompanying paper."
+type: software
+authors:
+  - family-names: Dhondge
+    given-names: Swaraj
+    affiliation: Independent Researcher
+license: MIT
+preferred-citation:
+  type: article
+  title: "Error Compounding in LLM-Based Infrastructure Simulation: A Multi-Domain Benchmark Study"
+  authors:
+    - family-names: Dhondge
+      given-names: Swaraj
+  year: 2026
+  notes: "Preprint"
