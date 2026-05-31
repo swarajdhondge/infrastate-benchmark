@@ -1,6 +1,6 @@
 name: Benchmark Access Request
 description: Request access to the InfraState benchmark dataset and evaluation harness.
-title: "[Access Request] <name> — <affiliation>"
+title: "[Access Request] "
 labels: ["access-request"]
 body:
   - type: markdown
@@ -9,53 +9,41 @@ body:
         Thanks for your interest in the **InfraState benchmark**.
 
         Access is granted on request so the evaluation set stays out of public web crawls
-        (contamination control). Please complete this form — the maintainer will follow up
-        with an access link.
-  - type: input
-    id: name
+        (contamination control). Tell me who you are and what you plan to do with it.
+
+        **Granting access is entirely at my discretion.** I may approve, decline, or ask
+        follow-up questions. Submitting this request does not guarantee access.
+  - type: textarea
+    id: about
     attributes:
-      label: Name
-    validations:
-      required: true
-  - type: input
-    id: affiliation
-    attributes:
-      label: Affiliation / organization
-      placeholder: University, company, or "Independent"
-    validations:
-      required: true
-  - type: input
-    id: contact
-    attributes:
-      label: Contact email
-    validations:
-      required: true
-  - type: dropdown
-    id: role
-    attributes:
-      label: Role
-      options:
-        - Academic researcher
-        - Student
-        - Industry researcher / engineer
-        - Other
+      label: Who are you?
+      description: Name, affiliation (or "independent"), and anything that helps me understand the request — a link to your work, profile, or institution is welcome but optional.
     validations:
       required: true
   - type: textarea
     id: use
     attributes:
-      label: Intended use
-      description: Briefly describe how you plan to use the benchmark.
+      label: What do you want to do with the benchmark?
+      description: Describe your intended use as concretely as you can.
+    validations:
+      required: true
+  - type: input
+    id: contact
+    attributes:
+      label: How should I reach you if approved?
+      description: Email, or another contact you prefer.
     validations:
       required: true
   - type: checkboxes
     id: terms
     attributes:
-      label: Terms (required)
+      label: Terms
       options:
         - label: I will not redistribute the dataset or post it publicly.
           required: true
-        - label: I will use the data for evaluation only — not to train or fine-tune models (prevents contamination).
+        - label: I will use the data for evaluation only — not to train or fine-tune models (this is what keeps the benchmark uncontaminated).
           required: true
         - label: I will cite the paper if I use the benchmark in published work.
+          required: true
+        - label: I understand access is at the maintainer's sole discretion and is not guaranteed.
           required: true
