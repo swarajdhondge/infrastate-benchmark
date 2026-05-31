@@ -6,7 +6,7 @@ authors:
     given-names: Swaraj
     affiliation: Independent Researcher
 version: "1.0"
-date-released: 2026-05-31
+date-released: 2026-06-01
 doi: 10.5281/zenodo.20479283
 url: "https://zenodo.org/records/20479284"
 repository-code: "https://github.com/swarajdhondge/infrastate-benchmark"
@@ -32,4 +32,3 @@ preferred-citation:
   year: 2026
   doi: 10.5281/zenodo.20479283
   url: "https://zenodo.org/records/20479284"
-  notes: "Preprint (Zenodo). A peer-reviewed version is planned."
