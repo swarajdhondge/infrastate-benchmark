@@ -1,18 +1,18 @@
 # InfraState Benchmark
 
-A multi-domain benchmark for evaluating **LLM-based infrastructure state prediction** across Docker, Git, SQL, Python, npm, Terraform, Kubernetes, and cross-domain interactions.
+A multi-domain benchmark for evaluating **LLM-based infrastructure state prediction**. It measures
+whether LLMs can track infrastructure state across multi-step command sequences — the failure mode
+the paper calls *error compounding*.
 
 > **Paper:** *Error Compounding in LLM-Based Infrastructure Simulation: A Multi-Domain Benchmark Study*
 > Swaraj Dhondge (Independent Researcher)
-> Preprint: https://zenodo.org/records/20479284 · DOI: [10.5281/zenodo.20479283](https://doi.org/10.5281/zenodo.20479283)
-> *Preprint — a peer-reviewed version is planned.*
+> Read it: https://zenodo.org/records/20479284 · DOI: [10.5281/zenodo.20479283](https://doi.org/10.5281/zenodo.20479283)
 
 ## What this is
 
-A benchmark of **1,496 evaluation entries across 80 scenarios**, spanning seven infrastructure
-domains plus cross-domain interactions, generated from **containerized real-tool execution with
-ground-truth state capture**. It measures whether LLMs can track infrastructure state across
-multi-step command sequences — the failure mode the paper calls *error compounding*.
+**1,496 evaluation entries across 80 scenarios**, spanning seven infrastructure domains plus
+cross-domain interactions, generated from **containerized real-tool execution with ground-truth
+state capture**.
 
 **Domains:** Docker · Git · SQL · Python · npm · Terraform · Kubernetes · cross-domain
 
@@ -31,14 +31,13 @@ multi-step command sequences — the failure mode the paper calls *error compoun
 The benchmark **dataset and evaluation harness are available on request**, not posted publicly.
 
 This is deliberate: keeping the evaluation set out of public web crawls prevents it from leaking
-into LLM training corpora, which would contaminate future evaluations. This is standard practice
-for benchmarks whose value depends on remaining unseen by the models they test.
+into LLM training corpora, which would contaminate future evaluations — standard practice for
+benchmarks whose value depends on remaining unseen by the models they test.
 
-**To request access:**
-1. Open a [**Benchmark Access Request**](../../issues/new?template=access-request.yml) issue.
-2. Fill in your name, affiliation, intended use, and agree to the terms (research use, no
-   redistribution, no use as training data).
-3. The maintainer will follow up with an access link.
+To request access, open a [**Benchmark Access Request**](../../issues/new?template=access-request.yml)
+issue and tell me who you are and what you intend to do with it. **Granting access is entirely at my
+discretion** — I may approve, decline, or ask follow-up questions, and a request does not guarantee
+access.
 
 ## Citation
 
@@ -50,7 +49,7 @@ If you use this benchmark, please cite the paper (see [`CITATION.cff`](CITATION.
   author       = {Dhondge, Swaraj},
   year         = {2026},
   doi          = {10.5281/zenodo.20479283},
-  howpublished = {Preprint, Zenodo},
+  publisher    = {Zenodo},
   url          = {https://doi.org/10.5281/zenodo.20479283}
 }
 ```
