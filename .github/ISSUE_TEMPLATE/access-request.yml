@@ -1,0 +1,61 @@
+name: Benchmark Access Request
+description: Request access to the InfraState benchmark dataset and evaluation harness.
+title: "[Access Request] <name> — <affiliation>"
+labels: ["access-request"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for your interest in the **InfraState benchmark**.
+
+        Access is granted on request so the evaluation set stays out of public web crawls
+        (contamination control). Please complete this form — the maintainer will follow up
+        with an access link.
+  - type: input
+    id: name
+    attributes:
+      label: Name
+    validations:
+      required: true
+  - type: input
+    id: affiliation
+    attributes:
+      label: Affiliation / organization
+      placeholder: University, company, or "Independent"
+    validations:
+      required: true
+  - type: input
+    id: contact
+    attributes:
+      label: Contact email
+    validations:
+      required: true
+  - type: dropdown
+    id: role
+    attributes:
+      label: Role
+      options:
+        - Academic researcher
+        - Student
+        - Industry researcher / engineer
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: use
+    attributes:
+      label: Intended use
+      description: Briefly describe how you plan to use the benchmark.
+    validations:
+      required: true
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Terms (required)
+      options:
+        - label: I will not redistribute the dataset or post it publicly.
+          required: true
+        - label: I will use the data for evaluation only — not to train or fine-tune models (prevents contamination).
+          required: true
+        - label: I will cite the paper if I use the benchmark in published work.
+          required: true
