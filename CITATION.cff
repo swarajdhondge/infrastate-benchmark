@@ -1,17 +1,35 @@
 cff-version: 1.2.0
-title: "InfraState Benchmark — Evaluation Harness"
-message: "If you use this harness, please cite the accompanying paper."
-type: software
+message: "If you use this benchmark, please cite the paper."
+title: "Error Compounding in LLM-Based Infrastructure Simulation: A Multi-Domain Benchmark Study"
 authors:
   - family-names: Dhondge
     given-names: Swaraj
     affiliation: Independent Researcher
-license: MIT
+version: "1.0"
+date-released: 2026-05-31
+doi: 10.5281/zenodo.20479283
+url: "https://zenodo.org/records/20479284"
+repository-code: "https://github.com/swarajdhondge/infrastate-benchmark"
+license: CC-BY-4.0
+keywords:
+  - large language models
+  - infrastructure simulation
+  - benchmark
+  - error compounding
+  - auto-regressive evaluation
+  - DevOps
+  - state prediction
+  - Docker
+  - Kubernetes
+  - Terraform
 preferred-citation:
   type: article
   title: "Error Compounding in LLM-Based Infrastructure Simulation: A Multi-Domain Benchmark Study"
   authors:
     - family-names: Dhondge
       given-names: Swaraj
+      affiliation: Independent Researcher
   year: 2026
-  notes: "Preprint"
+  doi: 10.5281/zenodo.20479283
+  url: "https://zenodo.org/records/20479284"
+  notes: "Preprint (Zenodo). A peer-reviewed version is planned."
