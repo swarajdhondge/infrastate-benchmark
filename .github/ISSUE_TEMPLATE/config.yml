@@ -1,5 +1,5 @@
 blank_issues_enabled: false
 contact_links:
-  - name: Read the paper first (Zenodo preprint)
+  - name: Read the paper first
     url: https://zenodo.org/records/20479284
     about: Please read the paper before requesting benchmark access.
